@@ -11,18 +11,65 @@
 
 <body>
     <header>
-        <h1>Hello World</h1>
+        <div class="header">
+            <a href="home.html">
+                <img src="PRSLogos/Logo.svg" alt="Logo" width="200px">
+            </a>
+        </div>
     </header>
-    <div class="topnav">
-        <a href="home.html">Home</a>
-        <a href="sad.html">Sad Image</a>
-        <a href="easyboy.html">Easy Boy</a>
+    <div class="sidenav">
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="sad.html">Sad Image</a>
+            </li>
+            <li>
+                <a href="easyboy.html">Easy Boy</a>
+            </li>
+        </ul>
     </div>
 
     <div class="row">
-        <div class="leftcolumn">
+        <div class="rightcolumn">
             <div class="card">
                 <img src="../FirstWebpage/sad.JPG" alt="">
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Person</td>
+                            <td>Sadness</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>Sully</td>
+                            <td>Uber</td>
+                            <td rowspan=3 style="transform: rotate(90deg)">Whoa Dude</td>
+                        </tr>
+                        <tr>
+                            <td>Mike</td>
+                            <td>Not</td>
+                        </tr>
+                        <tr>
+                            <td>Me</td>
+                            <td>Super</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Conclusion</td>
+                            <td>Very Sad</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
     </div>

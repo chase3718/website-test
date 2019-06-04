@@ -41,33 +41,35 @@
             <form class="charsheet">
                 <header>
                     <section class="charname">
-                        <label for="charname">Character Name</label><input name="charname"
+                        <label for="charname">Character Name</label><input type="text" name="charname"
                             placeholder="Thoradin Fireforge" />
                     </section>
                     <section class="misc">
                         <ul>
                             <li>
-                                <label for="classlevel">Class & Level</label><input name="classlevel"
-                                    placeholder="Paladin 2" />
+                                <label for="class">Class</label><input type="text" name="class" placeholder="Paladin" />
                             </li>
                             <li>
-                                <label for="background">Background</label><input name="background"
+                                <label for="level">Level</label><input type="number" name="level" placeholder="2" />
+                            </li>
+                            <li>
+                                <label for="background">Background</label><input type="text" name="background"
                                     placeholder="Acolyte" />
                             </li>
                             <li>
-                                <label for="playername">Player Name</label><input name="playername"
+                                <label for="playername">Player Name</label><input type="text" name="playername"
                                     placeholder="Player McPlayerface">
                             </li>
                             <li>
-                                <label for="race">Race</label><input name="race" placeholder="Half-elf" />
+                                <label for="race">Race</label><input type="text" name="race" placeholder="Half-elf" />
                             </li>
                             <li>
-                                <label for="alignment">Alignment</label><input name="alignment"
-                                    placeholder="Lawful Good" />
+                                <label for="alignment">Alignment</label><input type="text" name="alignment"
+                                    placeholder="LG" />
                             </li>
                             <li>
-                                <label for="experiencepoints">Experience Points</label><input name="experiencepoints"
-                                    placeholder="3240" />
+                                <label for="experiencepoints">Experience Points</label><input type="number"
+                                    name="experiencepoints" placeholder="3240" />
                             </li>
                         </ul>
                     </section>
@@ -79,8 +81,8 @@
                                 <ul>
                                     <li>
                                         <div class="score">
-                                            <label for="Strengthscore">Strength</label><input name="Strengthscore"
-                                                placeholder="10" />
+                                            <label for="Strengthscore">Strength</label><input type="number" min="0"
+                                                max="20" name="Strengthscore" placeholder="10" />
                                         </div>
                                         <div class="modifier">
                                             <input name="Strengthmod" placeholder="+0" />
@@ -88,8 +90,8 @@
                                     </li>
                                     <li>
                                         <div class="score">
-                                            <label for="Dexterityscore">Dexterity</label><input name="Dexterityscore"
-                                                placeholder="10" />
+                                            <label for="Dexterityscore">Dexterity</label><input type="number" min="0"
+                                                max="20" name="Dexterityscore" placeholder="10" />
                                         </div>
                                         <div class="modifier">
                                             <input name="Dexteritymod" placeholder="+0" />
@@ -97,8 +99,8 @@
                                     </li>
                                     <li>
                                         <div class="score">
-                                            <label for="Constitutionscore">Constitution</label><input
-                                                name="Constitutionscore" placeholder="10" />
+                                            <label for="Constitutionscore">Constitution</label><input type="number"
+                                                min="0" max="20" name="Constitutionscore" placeholder="10" />
                                         </div>
                                         <div class="modifier">
                                             <input name="Constitutionmod" placeholder="+0" />
@@ -106,8 +108,8 @@
                                     </li>
                                     <li>
                                         <div class="score">
-                                            <label for="Wisdomscore">Wisdom</label><input name="Wisdomscore"
-                                                placeholder="10" />
+                                            <label for="Wisdomscore">Wisdom</label><input type="number" min="0" max="20"
+                                                name="Wisdomscore" placeholder="10" />
                                         </div>
                                         <div class="modifier">
                                             <input name="Wisdommod" placeholder="+0" />
@@ -115,8 +117,8 @@
                                     </li>
                                     <li>
                                         <div class="score">
-                                            <label for="Intelligencescore">Intelligence</label><input
-                                                name="Intelligencescore" placeholder="10" />
+                                            <label for="Intelligencescore">Intelligence</label><input type="number"
+                                                min="0" max="20" name="Intelligencescore" placeholder="10" />
                                         </div>
                                         <div class="modifier">
                                             <input name="Intelligencemod" placeholder="+0" />
@@ -124,8 +126,8 @@
                                     </li>
                                     <li>
                                         <div class="score">
-                                            <label for="Charismascore">Charisma</label><input name="Charismascore"
-                                                placeholder="10" />
+                                            <label for="Charismascore">Charisma</label><input type="number" min="0"
+                                                max="20" name="Charismascore" placeholder="10" />
                                         </div>
                                         <div class="modifier">
                                             <input name="Charismamod" placeholder="+0" />
@@ -144,7 +146,7 @@
                                     <div class="label-container">
                                         <label for="proficiencybonus">Proficiency Bonus</label>
                                     </div>
-                                    <input name="proficiencybonus" placeholder="+2" />
+                                    <input type="number" name="proficiencybonus" placeholder="2"/>
                                 </div>
                                 <div class="saves list-section box">
                                     <ul>
@@ -377,7 +379,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="attacksandspellcasting">
+                        <!-- <section class="attacksandspellcasting">
                             <div>
                                 <label>Attacks & Spellcasting</label>
                                 <table>
@@ -432,8 +434,8 @@
                                 </table>
                                 <textarea></textarea>
                             </div>
-                        </section>
-                        <section class="equipment">
+                        </section> -->
+                        <!-- <section class="equipment">
                             <div>
                                 <label>Equipment</label>
                                 <div class="money">
@@ -457,8 +459,8 @@
                                 </div>
                                 <textarea placeholder="Equipment list here"></textarea>
                             </div>
-                        </section>
-                    </section>
+                        </section> -->
+                    </section> 
                     <section>
                         <section class="flavor">
                             <div class="personality">

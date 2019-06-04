@@ -306,6 +306,7 @@
   }
   form.charsheet main section.combat {
     background-color: #eee;
+    /* float: left; */
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -591,6 +592,7 @@
     padding: 10px;
     background: #bbb;
     border-radius: 10px;
+    
   }
   form.charsheet main section.flavor div {
     background: white;

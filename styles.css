@@ -5,7 +5,7 @@
 body {
     font-family: Arial;
     padding: 10px;
-    background-image: url(dnd_background.jpg);
+    background-image: url(Images/art-black-and-white-counter-2341290.jpg);
     image-rendering: optimizeQuality;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -36,23 +36,27 @@ form.charSheet header div.header {
     display: flex;
     align-content: stretch;
     align-items: stretch;
-  }
+}
 
 form.charSheet main div.stats {
     width: 50%;
 }
-  form.charSheet main div.stats ul.stats {
+
+form.charSheet main div.stats ul.stats {
     display: flex;
     /* align-content: stretch;
     align-items: stretch; */
-  }
-  form.charSheet main div.stats ul.stats li {
+}
+
+form.charSheet main div.stats ul.stats li {
     display: flex;
     align-items: center;
-  }
-  /* form.charSheet main div.stats ul.stats li > * {
+}
+
+/* form.charSheet main div.stats ul.stats li > * {
     margin-left: 5px;
   } */
+
 .header {}
 
 .header h1 {
@@ -73,6 +77,26 @@ form.charSheet main div.stats {
     text-decoration: none;
 }
 
+.sidenav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.sidenav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.sidenav ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .topnav a:hover {
     background-color: green;
     stroke: black;
@@ -85,9 +109,8 @@ form.charSheet main div.stats {
 }
 
 .rightcolumn {
-    float: left;
+    float: right;
     width: 20%;
-    background-color: #f1f1f1;
     padding-left: 20px;
 }
 
@@ -95,6 +118,36 @@ form.charSheet main div.stats {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+}
+
+.rightcolumn .card table {
+    background-color: lightgray;
+    border-collapse: collapse;
+}
+
+.rightcolumn .card table tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.rightcolumn .card table tbody {
+    border: 1px solid black;
+    background-color: darkgray;
+}
+
+.rightcolumn .card table tbody tr, td {
+    border: 1px solid black;
+}
+
+.rightcolumn .card table thead {
+    font-weight: bold;
+    border-collapse: collapse;
+    background-color: gray;
+}
+
+.rightcolumn .card table tfoot {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
 }
 
 .row:after {
